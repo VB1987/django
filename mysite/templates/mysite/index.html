@@ -1,0 +1,86 @@
+{% load static %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Backend Developer Portfolio">
+<title>My Backend Developer Portfolio</title>
+
+<link rel="stylesheet" href="{% static 'mysite/style.css' %}">
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="https://www.cookchryslerdodgeram.com/static/dealer-17916/ezgif.com-gif-maker-2022-10-03T1.png" alt="Profile Picture" class="profile-img">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi! I'm [Your Name], a passionate Backend Developer focused on building efficient and scalable systems using modern technologies. I have experience in building RESTful APIs, working with relational and NoSQL databases, and deploying applications using cloud services like AWS and Docker. Let's connect and discuss how I can help your project!</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Node.js, Python, Java, SQL</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+            <li><strong>Frameworks:</strong> Express.js, Django, Spring Boot</li>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+            <li><strong>APIs:</strong> RESTful APIs, GraphQL</li>
+            <li><strong>Tools:</strong> Docker, AWS, Kubernetes</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: [Project Name]</h3>
+            <p>A brief description of your project. This could be a web application, an API, or a tool you built. The goal was to create a scalable and efficient backend system for the project.</p>
+            <a href="https://github.com/your-github/repo-link" target="_blank">View Code</a> |
+            <a href="http://project-live-url.com" target="_blank">Live Demo</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: [Project Name]</h3>
+            <p>A brief description of your project. It's a backend application designed to handle large-scale data processing and real-time requests.</p>
+            <a href="https://github.com/your-github/repo-link" target="_blank">View Code</a> |
+            <a href="http://project-live-url.com" target="_blank">Live Demo</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></li>
+            <li>GitHub: <a href="https://github.com/your-github" target="_blank">GitHub Profile</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
