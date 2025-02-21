@@ -28,8 +28,7 @@ SECRET_KEY = 'django-insecure-ixwt5v_&b%z=mg&gbb869q03vqk3exb4rypnhytjah%ip)*p!4
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	'192.168.1.67',
-	'nodejs.loc'
+	'*'
 ]
 
 INTERNAL_IPS = [
